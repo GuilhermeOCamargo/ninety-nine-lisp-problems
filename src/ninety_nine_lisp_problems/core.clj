@@ -16,15 +16,15 @@
   
   (println "Problem 04 (a b c d) :: " (number-of-elements values))
   
-  (println "Problem 05: " (reverse-list values))
+  (println "Problem 05 (a b c d) :: " (reverse-list values))
   
-  (println "Problem 06 (a b c d): " (palindrome? values))
+  (println "Problem 06 (a b c d) :: " (palindrome? values))
 
-  (println "Problem 06 (x a m a x): " (palindrome? '(x a m a x)))
+  (println "Problem 06 (x a m a x) :: " (palindrome? '(x a m a x)))
 
-  (println "Problem 07:(a (b (c d) e))) " (my-flatten '(a (b (c d) e))))
+  (println "Problem 07 (a (b (c d) e))) :: " (my-flatten '(a (b (c d) e))))
 
-  (println "Problem 08:(a a a a b c c a a d e e e e) " (compress?  '(a a a a b c c a a d e e e e)))
+  (println "Problem 08 (a a a a b c c a a d e e e e) :: " (compress  '(a a a a b c c a a d e e e e)))
 
   (println "Problem 09:(a a a a b c c a a d e e e e) " (my-pack-1 '(a a a a b c c a a d e e e e)))
   )

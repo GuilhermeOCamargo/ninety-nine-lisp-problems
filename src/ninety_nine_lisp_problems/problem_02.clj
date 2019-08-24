@@ -3,13 +3,13 @@
 ;;          (my-but-last '(a b c d))
 ;;          (C D)
 
-; (defn my-but-last [list]
-;     (str (nth list (- (count list) 2)) "|" (last list))
+; (defn my-but-last [param]
+;     (str (nth param (- (count param) 2)) "|" (last param))
 ;     )
 
-(defn my-but-last [list]
-    (if (<= (count list) 2)
-        list
-        (recur (rest list))
+(defn my-but-last [param]
+    (if (<= (count param) 2)
+        param
+        (recur (rest param))
     )
 )

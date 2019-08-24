@@ -3,13 +3,13 @@
 ;;* (my-last '(a b c d))
 ;;(D)
 
-; (defn my-last [list] 
-;     (last list))
+; (defn my-last [param] 
+;     (last param))
 
 (defn my-last 
-    [list] 
-    (if (<= (count list) 1)
-        (first list)
-        (recur (rest list))
+    [param] 
+    (if (<= (count param) 1)
+        (first param)
+        (recur (rest param))
     )
 )
