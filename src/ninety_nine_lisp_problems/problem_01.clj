@@ -3,5 +3,5 @@
 ;;* (my-last '(a b c d))
 ;;(D)
 
-(defn problem_01 [list] 
+(defn my-last [list] 
     (println (last list)))

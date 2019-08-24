@@ -2,9 +2,12 @@
 
 (def values '("a" "b" "c" "d"))
 
-(load "problem-01")
+(load "problem_01", "problem_02")
 
 (defn -main [& args]
-    (println "Problem 01: ")
-    (problem_01 values)
-    )
+  (println "Problem 01: ")
+  (my-last values)
+
+  (println "Problem 02: ")
+  (my-but-last values)
+  )
