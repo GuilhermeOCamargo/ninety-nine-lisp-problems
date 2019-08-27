@@ -8,3 +8,10 @@
 ; (defn compress [list]
 ;     (distinct list)
 ;     )
+(defn is-equal? [p1 p2](not= p1 p2)) 
+
+(defn compress [param]
+    
+    (if (not= (coll? param))
+        "It's not a collection"
+        (distinct param)))

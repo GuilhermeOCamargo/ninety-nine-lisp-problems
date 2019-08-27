@@ -10,6 +10,5 @@
     [param] 
     (if (<= (count param) 1)
         (first param)
-        (recur (rest param))
-    )
-)
+        (recur (rest param))))
+    

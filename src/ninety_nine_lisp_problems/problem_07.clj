@@ -13,12 +13,11 @@
             result
             (let [head (first ls), tail (rest ls)]
                 (recur tail (concat result 
-                    (if (coll? head) 
-                        (my-flatten head) 
-                        (param head)
-                    )
-                ))
-            )
-        )
-    )
-)
+                             (if (coll? head) 
+                                 (my-flatten head) 
+                                 (list head))))))))
+                    
+                
+            
+        
+    
