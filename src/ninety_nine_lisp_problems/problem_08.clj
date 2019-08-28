@@ -8,10 +8,14 @@
 ; (defn compress [list]
 ;     (distinct list)
 ;     )
-(defn is-equal? [p1 p2](not= p1 p2)) 
 
 (defn compress [param]
-    
     (if (not= (coll? param))
         "It's not a collection"
-        (distinct param)))
+        (loop [ls param, result ()]
+            (if (empty? ls)
+                (reverse result)
+                (let [head (first ls), result-head (first result)]
+                    (recur (rest ls) (if (not= head result-head)
+                    (cons head result)
+                    result)))))))
