@@ -14,4 +14,4 @@
                     (recur (rest ls) 
                         (if (= (element-at (first ls) 1)1)
                             (cons (element-at (first ls) 2) result)
-                            (cons (first ls) result))))))))L
+                            (cons (first ls) result))))))))
