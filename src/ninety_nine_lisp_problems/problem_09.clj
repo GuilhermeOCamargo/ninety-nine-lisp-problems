@@ -3,7 +3,7 @@
 ;;Example:
 ;;* (pack '(a a a a b c c a a d e e e e))
 ;;((A A A A) (B) (C C) (A A) (D) (E E E E))
-(defn my-pack-1 
+(defn my-pack 
     [lst]
     (loop [ls lst, result ()]
       (if (empty? ls)
@@ -13,4 +13,3 @@
                  (if (= (first result-head) head)
                    (cons (cons head result-head) (rest result))
                    (cons (list head) result)))))))
-; TODO my solution
