@@ -45,5 +45,5 @@
 
   (println "Problem 12 ((4 a) b (2 c) (2 a) d (4 e)) :: " (decode '((4 a) b (2 c) (2 a) d (4 e))))
 
-  ; (println "Problem 13 (a a a a b c c a a d e e e e) :: " (encode-direct '(a a a a b c c a a d e e e e)))
+  (println "Problem 13 (a a a a b c c a a d e e e e) :: " (encode-direct '(a a a a b c c a a d e e e e)))
   )

@@ -5,4 +5,12 @@
 ; As in problem P11, simplify the result list by replacing the singleton lists (1 X) by X.
 
 (defn encode-direct [param]
-    )
+    (loop [ls param, result ()]
+      (if (empty? ls)
+        (reverse result)
+        (let [head (first ls), result-head (first result)]
+          (recur (rest ls)
+                  (if (coll? result-head)
+                    (if (= (first result-head) head)
+                      (cons (cons head result-head) (rest result))
+                      (cons head result))))))))
