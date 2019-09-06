@@ -1,10 +1,21 @@
-(ns ninety-nine-lisp-problems.core)
+(ns ninety-nine-lisp-problems.core
+  (:require 
+    [ninety-nine-lisp-problems.problem_01 :refer [my-last]]
+    [ninety-nine-lisp-problems.problem_02 :refer [my-but-last]]
+    [ninety-nine-lisp-problems.problem_03 :refer [element-at]]
+    [ninety-nine-lisp-problems.problem_04 :refer [number-of-elements]]
+    [ninety-nine-lisp-problems.problem_05 :refer [reverse-list]]
+    [ninety-nine-lisp-problems.problem_06 :refer [palindrome?]]
+    [ninety-nine-lisp-problems.problem_07 :refer [my-flatten]]
+    [ninety-nine-lisp-problems.problem_08 :refer [compress]]
+    [ninety-nine-lisp-problems.problem_09 :refer [my-pack]]
+    [ninety-nine-lisp-problems.problem_10 :refer [encode]]
+    [ninety-nine-lisp-problems.problem_11 :refer [encode-modified]]
+    [ninety-nine-lisp-problems.problem_12 :refer [decode]]
+    [ninety-nine-lisp-problems.problem_13 :refer [encode-direct]])
+    (:gen-class))
 
 (def values '(a b c d))
-
-(load "problem_01", "problem_02", "problem_03", "problem_04", "problem_05", "problem_06", "problem_07", "problem_08",
-  "problem_09", "problem_10", "problem_11", "problem_12", "problem_13")
-
 (defn -main [& args]
   (println "Given the following list: " values)
 
@@ -34,5 +45,5 @@
 
   (println "Problem 12 ((4 a) b (2 c) (2 a) d (4 e)) :: " (decode '((4 a) b (2 c) (2 a) d (4 e))))
 
-  (println "Problem 13 (a a a a b c c a a d e e e e) :: " (encode-direct '(a a a a b c c a a d e e e e)))
+  ; (println "Problem 13 (a a a a b c c a a d e e e e) :: " (encode-direct '(a a a a b c c a a d e e e e)))
   )
