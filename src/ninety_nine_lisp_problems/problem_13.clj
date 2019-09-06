@@ -11,6 +11,9 @@
         (let [head (first ls), result-head (first result)]
           (recur (rest ls)
                   (if (coll? result-head)
-                    (if (= (first result-head) head)
-                      (cons (cons head result-head) (rest result))
+                    (if (= (second result-head) head)
+                      (cons (cons (inc (first result-head)) (rest result-head)) (rest result))
+                      (cons head result))
+                    (if (= result-head head)
+                      (cons (list 2 result-head) (rest result))
                       (cons head result))))))))
