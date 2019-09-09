@@ -8,10 +8,6 @@
 
 (defn my-split [param qtd]
   (loop [ls param, result (), current-qtd 1]
-    (prn "LS :: " ls)
-    (prn "RESULT :: " result)
-    (prn "CURRENT-QTD :: " current-qtd)
-
     (if (empty? ls)
       (list (reverse (last result)) (reverse (first result)))
       (let [head (first ls) result-head (first result)]

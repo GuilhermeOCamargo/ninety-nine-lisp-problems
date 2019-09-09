@@ -10,5 +10,5 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
-.idea
-.gradle
+.idea/
+.gradle/
