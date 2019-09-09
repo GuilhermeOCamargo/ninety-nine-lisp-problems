@@ -12,12 +12,15 @@
     [ninety-nine-lisp-problems.problem_10 :refer [encode]]
     [ninety-nine-lisp-problems.problem_11 :refer [encode-modified]]
     [ninety-nine-lisp-problems.problem_12 :refer [decode]]
-    [ninety-nine-lisp-problems.problem_13 :refer [encode-direct]])
+    [ninety-nine-lisp-problems.problem_13 :refer [encode-direct]]
+    [ninety-nine-lisp-problems.problem_14 :refer [dupli]]
+    [ninety-nine-lisp-problems.problem_15 :refer [repli]]
+    [ninety-nine-lisp-problems.problem_16 :refer [my-drop]]
+    [ninety-nine-lisp-problems.problem_17 :refer [my-split]])
     (:gen-class))
 
 (def values '(a b c d))
 (defn -main [& args]
-  (println "Given the following list: " values)
 
   (println "Problem 01(a b c d) :: " (my-last values))
   
@@ -46,4 +49,13 @@
   (println "Problem 12 ((4 a) b (2 c) (2 a) d (4 e)) :: " (decode '((4 a) b (2 c) (2 a) d (4 e))))
 
   (println "Problem 13 (a a a a b c c a a d e e e e) :: " (encode-direct '(a a a a b c c a a d e e e e)))
+
+  (println "Problem 14 (a b c c d) :: " (dupli '(a b c c d)))
+
+  (println "Problem 15 (a b c d) 3 :: " (repli '(a b  c d) 3))
+
+  (println "Problem 16 (a b c d e f g h i k) 3 :: " (my-drop '(a b c d e f g h i k) 3))
+
+  (println "Problem 17 (a b c d e f g h i k) 3 :: " (my-split '(a b c d e f g h i k) 3))
+
   )

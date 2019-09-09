@@ -12,6 +12,4 @@
 (defn element-at [param index]
     (if (= index 1)
         (first param)
-        (recur (rest param) (dec index))
-    )
-)
+        (recur (rest param) (dec index))))
